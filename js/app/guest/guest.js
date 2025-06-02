@@ -30,7 +30,7 @@ export const guest = (() => {
         const count = (new Date(document.body.getAttribute('data-time').replace(' ', 'T'))).getTime();
 
         /**
-         * @param {number} num 
+         * @param {number} num
          * @returns {string}
          */
         const pad = (num) => num < 10 ? `0${num}` : `${num}`;
@@ -201,7 +201,7 @@ export const guest = (() => {
     };
 
     /**
-     * @param {HTMLDivElement} div 
+     * @param {HTMLDivElement} div
      * @returns {void}
      */
     const showStory = (div) => {
@@ -239,7 +239,7 @@ export const guest = (() => {
      */
     const buildGoogleCalendar = () => {
         /**
-         * @param {string} d 
+         * @param {string} d
          * @returns {string}
          */
         const formatDate = (d) => (new Date(d + ':00Z')).toISOString().replace(/[-:]/g, '').split('.').shift();
@@ -247,7 +247,7 @@ export const guest = (() => {
         const url = new URL('https://calendar.google.com/calendar/render');
         const data = new URLSearchParams({
             action: 'TEMPLATE',
-            text: 'The Wedding of Wahyu and Riski',
+            text: 'The Wedding of Acca and Sani',
             dates: `${formatDate('2023-03-15 10:00')}/${formatDate('2023-03-15 11:00')}`,
             details: 'Tanpa mengurangi rasa hormat, kami mengundang Anda untuk berkenan menghadiri acara pernikahan kami. Terima kasih atas perhatian dan doa restu Anda, yang menjadi kebahagiaan serta kehormatan besar bagi kami.',
             location: 'RT 10 RW 02, Desa Pajerukan, Kec. Kalibagor, Kab. Banyumas, Jawa Tengah 53191.',
@@ -265,7 +265,7 @@ export const guest = (() => {
         progress.add();
 
         /**
-         * @param {boolean} isLoad 
+         * @param {boolean} isLoad
          * @returns {void}
          */
         const load = (isLoad) => {

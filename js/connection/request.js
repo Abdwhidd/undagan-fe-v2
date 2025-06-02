@@ -68,7 +68,7 @@ export const request = (method, path) => {
     let callbackFunc = null;
 
     /**
-     * @param {string|URL} input 
+     * @param {string|URL} input
      * @returns {Promise<Response>}
      */
     const baseFetch = (input) => {
@@ -125,7 +125,7 @@ export const request = (method, path) => {
             }
 
             /**
-             * @param {Cache} c 
+             * @param {Cache} c
              * @returns {Promise<Response>}
              */
             const fetchPut = (c) => wrapperFetch().then((res) => {
@@ -200,7 +200,7 @@ export const request = (method, path) => {
     };
 
     /**
-     * @param {Response} res 
+     * @param {Response} res
      * @returns {Response}
      */
     const baseDownload = (res) => {
@@ -311,7 +311,7 @@ export const request = (method, path) => {
             return this;
         },
         /**
-         * @param {string} name 
+         * @param {string} name
          * @param {string|null} ext
          * @returns {ReturnType<typeof request>}
          */
@@ -329,7 +329,7 @@ export const request = (method, path) => {
             return this;
         },
         /**
-         * @param {object|null} header 
+         * @param {object|null} header
          * @returns {Promise<Response>}
          */
         default(header = null) {
