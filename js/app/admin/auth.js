@@ -12,6 +12,8 @@ export const auth = (() => {
      */
     let user = null;
 
+
+
     /**
      * @param {HTMLButtonElement} button
      * @returns {Promise<void>}
